@@ -9,15 +9,11 @@
 #import <UIKit/UIKit.h>
 #import <WebKit/WebKit.h>
 
-@interface UIWebView (ToFile)
+/**
+ *直接用UIWebView或者WKWebView调用
+ */
 
-- (UIImage *)convertToImage;
-
-- (NSData *)convertToPDFData;
-
-@end
-
-@interface WKWebView (ToFile)
+@interface UIView (ToFile)
 
 - (UIImage *)convertToImage;
 
